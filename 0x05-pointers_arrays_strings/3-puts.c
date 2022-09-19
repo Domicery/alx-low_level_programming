@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-   * _puts - function that prints a string foolowed by new line to stdout
-   * @str: string to print
-   * Return: void
+ * _puts - function that prints a string foolowed by new line to stdout
+ * @str: string to print
+ * Return: void
  */
 
 void _puts(char *str)
