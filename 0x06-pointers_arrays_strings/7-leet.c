@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-   * leet -function that encodes a string into 1337
-   * @s: parameter of the function
-   * Return: s encode into 1337
-  */
+  * leet -function that encodes a string into 1337
+  * @s: parameter of the function
+  * Return: s encode into 1337
+ */
 
 char *leet(char *s)
 {
-		int i, j, l;
+		int i, j;
 			char *letters = "aAeEoOtTlL";
 				char *code = "43071";
 

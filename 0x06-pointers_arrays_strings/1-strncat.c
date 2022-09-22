@@ -27,19 +27,15 @@ int _strlen(char *s)
 
 char *_strncat(char *dest, char *src, int n)
 {
-		int ls, ld;
+		int i, j, ld;
 
 			ld = _strlen(dest);
-				ls = _strlen(src) - 1;
-					if (n < ls)
-								ls = n;
 
-						while (ls >= 0)
-								{
-											*(dest + ld + ls) = *(src + ls);
-													ls--;
-														}
-							*(dest + _strlen(dest)) = '\0';
+				for (i = ld, j = 0; *(src + j) && j < n; i++, j++)
+						{
+									*(dest + i) = *(src + j);
+										}
+					*(dest + i) = '\0';
 
-								return (dest);
+						return (dest);
 }
